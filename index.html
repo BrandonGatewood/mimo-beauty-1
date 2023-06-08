@@ -12,7 +12,9 @@
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-            <a href="#" class="navbar-brand">Mimo</a>
+            <a href="#" class="navbar-brand">
+                <img src="./img/mimoLogo.png" alt="Mimo" >
+            </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                <span class="navbar-toggler-icon"></span> 
@@ -38,6 +40,53 @@
     </nav>
 
     <!-- Banner -->
+    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center">
+                <div class="w-100 p-2">
+                  <p class="bannderAbout">
+                    Mimo offers a range of hair services and treatments. From percision haircuts, 3-D highlights,
+                    hair and corrective coloring, deep conditioning and much more. If you want to look and feel younger, 
+                    give us a call or come see us today!
+                  </p>
+                  <button
+                    class="btn btn-primary btn-lg"
+                    data-bs-toggle="modal"
+                    data-bs-target="#enroll"
+                  >
+                    Contact Us!
+                  </button>
+                </div>
+                <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide p-2" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div> 
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/mimo_ad.jpg" class="d-block w-100" alt="Image of Mimo ad">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/ct_ad.jpg" class="d-block w-100" alt="Image of cosmetic tattoo ad">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./img/ee_ad.jpg" class="d-block w-100" alt="Image of eyelash extension ad">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
