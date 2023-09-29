@@ -1,0 +1,24 @@
+.nav-link {
+  color: var(--white);
+}
+.nav-link:hover {
+  color: var(--lavender);
+}
+.nav-link:active {
+  color: var(--pink);
+}
+.dropdown-item {
+  color: var(--white);
+}
+.dropdown-item:hover {
+  color: var(--lavender);
+  background-color: var(--charcoal-gray);
+}
+.dropdown-item.active {
+  color: var(--pink);
+  background-color: var(--charcoal-gray);
+}
+.nav-item {
+  padding-right: 16px;
+  padding-left: 16px;
+}

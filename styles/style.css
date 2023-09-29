@@ -1,0 +1,88 @@
+:root {
+  --white: #ffffff;
+  --black: #080808;
+  --pink: #FFB6C1;
+  --lavender: #D9C1FF;
+  --charcoal-gray: #333333;
+}
+h4 {
+  color: var(--lavender);
+}
+html * {
+  font-family: Palatino, 'Palatino Linotype', serif; 
+}
+
+.bg-dark {
+    background-color: var(--charcoal-gray) !important;
+}
+
+.active {
+  color: var(--pink) !important;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--black);
+  --bs-btn-bg: var(--pink);
+  --bs-btn-border-color: var(--pink);
+  --bs-btn-hover-color: var(--pink);
+  --bs-btn-hover-bg: #{shade-color(var(--pink), 10%)};
+  --bs-btn-hover-border-color: #{shade-color(var(--pink), 10%)};
+  --bs-btn-focus-shadow-rgb: var(--pink);
+  --bs-btn-active-color: var(--pink);
+  --bs-btn-active-bg: #{shade-color(var(--pink), 20%)};
+  --bs-btn-active-border-color: #{shade-color(var(--pink), 20%)};
+}
+
+.btn-secondary {
+  --bs-btn-color: var(--pink);
+  --bs-btn-bg: ;
+  --bs-btn-border-color: var(--pink);
+  --bs-btn-hover-color: var(--black);
+  --bs-btn-hover-bg: var(--pink);
+  --bs-btn-hover-border-color: var(--pink);
+  --bs-btn-focus-shadow-rgb: var(--pink);
+  --bs-btn-active-color: var(--pink);
+  --bs-btn-active-bg: #{shade-color(var(--pink), 20%)};
+  --bs-btn-active-border-color: #{shade-color(var(--pink), 20%)};
+}
+
+.header {
+  color: var(--pink);
+}
+.card {
+  --bs-card-border-color: none;
+}
+.card-title {
+  color: var(--pink);
+}
+.card-text {
+  color: var(--white);
+}
+
+.accordion {
+  --bs-accordion-active-color: var(--pink);
+  --bs-accordion-btn-focus-border-color: var(--pink);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--pink);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='pink'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
+
+.accordion-button {
+  color: var(--white);
+}
+
+.accordion-body {
+  color: var(--white);
+}
+.row>* {
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+.contact-btn {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.accordion-button {
+  padding: 8px 16px;
+}
