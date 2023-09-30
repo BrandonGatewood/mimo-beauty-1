@@ -7,9 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/navbarStyles.css"> 
-    <link rel="stylesheet" href="/styles/contact.css">
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://code.jquery.com/jquery.min.js"></script> 
 
     <title>Contact Mimo</title>
 </head>
@@ -20,47 +19,101 @@
     <!-- End of NavBar -->
     
     <!-- Contact Us -->
-    <section class="bg-dark-subtle text-center">
-        <div class="container" id="contact">
-            <div class="align-items-center">
-                <h1>Contact Us</h1>
+    <section class="bg-dark">
+        <div class="container">
+            <div class="py-4">
+                <h1 class="header pt-4">
+                    Contact Us
+                </h1>
+                <p class="card-text px-3">
+                    We welcome your questions, feedback, and inquiries. Whether you're seeking information about our services, scheduling an appointment, or sharing your thoughts about your recent salon experience, our team is here to assist you. Feel free to reach out to us.
+                </p>
             </div>
-            <div class="container text-center contactInfo">
+
+            <!-- Contact Form -->
+            <div class="container">
                 <div class="row">
-                    <div class="col email">
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                    <!-- Email Form-->
+                    <div class="col-md-7 col-sm-12">
+                        <div class="card bg-dark w-100">
+                            <div class="card-body">
+                                <h2 class="card-title">Send Us an Email</h2>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" placeholder="Message" rows="4"></textarea>
+                                </div> 
+                                <a href="/contact.html" class="btn btn-primary" tabindex="-1" role="button" aria-disabled="true">Send</a>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlInput1" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
+                    <!-- End of Email Form-->
 
-                    <div class="col contact">
-                        <h4>Contact</h4> 
-                        <p>Mimo#gmail.com</p>
-                        <p>(808) 955-0029</p>
-
-                        <p>2203 Young St, Honolulu, HI 96826</p>
+                    <!-- Contact Info -->
+                    <div class="col-md-5 col-sm-12">
+                        <div class="card bg-dark w-100">
+                            <div class="card-body">
+                                <h2 class="card-title">Contact Info</h2>
+                                <ul class="list-group list-group-flush">
+                                    <li class="bg-dark list-group-item">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text">
+                                                    (808) 955-0029
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bg-dark list-group-item">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text">
+                                                    Mimobeautywear@gmail.com
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="bg-dark list-group-item">
+                                        <div class="row">
+                                            <div class="col-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pin-map-fill" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8l3-4z"/>
+                                                    <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"/>
+                                                </svg>
+                                            </div>
+                                            <div class="col-11">
+                                                <p class="card-text">
+                                                    2203 Young St, Honolulu, HI 96826 
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-               
+                    <!-- End of Contact Info -->
+                </div> 
                 <div class="row">
                     <div class="col">
-                        <div class="socials">
-                            <a href="https://www.instagram.com/mimobeautywear/" target="_blank" rel="noopener noreferrer">
-                                <img src="/img/instagram.svg" alt="Instagram icon">
-                            </a>
-                            <a href="https://www.facebook.com/profile.php?id=100063820051871" target="_blank" rel="noopener noreferrer">
-                                <img src="/img/facebook.svg" alt="Instagram icon">
-                            </a>
+                        <div class="card bg-dark w-100">
+                            <div class="card-body">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3717.41571129149!2d-157.8297589253632!3d21.294583978596602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006d916283b591%3A0x744aea77c6608496!2sMimo%20Beauty%20Wear!5e0!3m2!1sen!2sus!4v1696043822588!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
