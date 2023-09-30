@@ -5,12 +5,19 @@
   --lavender: #D9C1FF;
   --charcoal-gray: #333333;
 }
+
+/* Elements */
+body {
+  background-color: var(--charcoal-gray);
+}
 h4 {
   color: var(--lavender);
 }
 html * {
   font-family: Palatino, 'Palatino Linotype', serif; 
 }
+
+/* Bootstrap Customization */
 
 .bg-dark {
     background-color: var(--charcoal-gray) !important;
@@ -86,7 +93,9 @@ html * {
 .accordion-button {
   padding: 8px 16px;
 }
-
 .bi {
+  color: var(--pink);
+}
+.nested-header {
   color: var(--pink);
 }
