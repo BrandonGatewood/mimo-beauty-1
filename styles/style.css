@@ -99,3 +99,6 @@ html * {
 .nested-header {
   color: var(--lavender);
 }
+.show {
+  border-color: var(--pink);
+}
