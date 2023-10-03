@@ -99,3 +99,6 @@ html * {
 .nested-header {
   color: var(--lavender);
 }
+.phoneNumber {
+  active: none;
+}
