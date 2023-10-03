@@ -102,3 +102,7 @@ html * {
 .show {
   border-color: var(--pink);
 }
+a[href^=tel] {
+  color: inherit;
+  text-decoration: none;
+}
