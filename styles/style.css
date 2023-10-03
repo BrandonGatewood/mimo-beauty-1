@@ -63,7 +63,7 @@ html * {
   color: var(--pink);
 }
 .card-text {
-  color: var(--white) !important;
+  color: var(--white);
 }
 
 .accordion {
