@@ -102,7 +102,16 @@ html * {
 .show {
   border-color: var(--pink);
 }
+
+/* Remove highlights phonenumbers on mobile safari */
 a[href^=tel] {
   color: inherit;
   text-decoration: none;
+}
+
+/* Form Control */
+.form-control:focus {
+  border-color: var(--pink);
+  box-shadow: 0 0 0 0.2rem var(--pink);
+  outline: 0 none;
 }
