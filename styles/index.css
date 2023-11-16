@@ -10,17 +10,6 @@
     bottom:16px;
 }
 
-/*
-    Instagram feed styles
-*/
-.tempIG {
-    width: 300px;
-    height: 400px;
-}
-
-/*
-    Contact section styles
-*/
-.socialLink {
-    text-decoration: none;
+.divider {
+    border-bottom: 1px solid var(--white);
 }

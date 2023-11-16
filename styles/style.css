@@ -115,3 +115,10 @@ a[href^=tel] {
   box-shadow: 0 0 0 0.2rem var(--pink);
   outline: 0 none;
 }
+
+/*
+    Contact section styles
+*/
+.socialLink {
+  text-decoration: none;
+}
